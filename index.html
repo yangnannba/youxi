@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">	
+	
+	
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+    body{
+       padding-top:50px;
+    }
+    .navbar{
+	   	   -webkit-box-shadow:4px 4px 4px #ccc;
+		   	   -moz-box-shadow:4px 4px 4px #ccc;
+			   	   box-shadow:4px 4px 4px #ccc;	
+	}
+	.center{
+	   text-align:center;
+	}
+	.ptop30{
+	   padding-top:30px;
+	}
+	.footer{
+	   padding:30px 0;
+	   background-color:#f6f6f6;
+	   border-top:1px #e3e3e3 solid;
+	   margin-top:30px;
+	}
+	.thumbnail{
+	   transition:all 0.3s;
+	}
+	.thumbnail:hover{
+	   box-shadow:0 0 10px #ccc,2px 2px 10px #ccc;
+
+	}
+	.fenlei{
+	   text-align:center;
+	   padding:20px 10px;
+	   	   transition:all 0.3s;
+	}
+	.fenlei:hover{
+	   background-color:#f6f3f3;
+	   -webkit-border-radius:4px;
+	   -moz-border-radius:4px;	   
+	   border-radius:4px;	   
+	   
+	   	   -webkit-box-shadow:4px 4px 4px #ccc;
+		   	   -moz-box-shadow:4px 4px 4px #ccc;
+			   	   box-shadow:4px 4px 4px #ccc;
+	}	
+	.fenlei img{
+	   display:inline-block;
+	}
+	.danghang{
+	margin:40px auto 0;
+	}
+	.danghang .col-md-4{
+	  margin-bottom:20px;
+	}
+	#mdyouxi{
+		background-color: #f4f4f4;
+		padding:60px 0;
+		margin-bottom:30px;
+	}
+	#mdyouxi img:hover{
+	  transform: scale(1.1,1.1);	
+	}
+	.margin-bot-20{
+		margin:20px 0;
+	}
+	
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar navbar-default  navbar-fixed-top">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> 童年里的游戏</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="nav" class="nav navbar-nav">
+        <li><a href="#jieji">街机游戏 <span class="sr-only">(current)</span></a></li>
+
+        <li class="dropdown">
+          <a href="javascript:void()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">家机游戏  <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#fcyouxi">FC 游戏</a></li>
+            <li class="divider"></li>
+            <li><a href="#mdyouxi">MD游戏</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#" data-toggle="modal" data-target="#guanyu">关于 </a></li>
+      </ul>
+      <p class="navbar-text">回忆下童年玩过的游戏</p>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入......">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<div id="guanyu" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>这是一个。。。。。。。。。</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive" src="images/banner-1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="images/banner-2.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="images/banner-3.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="container danghang">
+  <div class="row">
+     <div class="col-md-4  wow flipInY">
+	     <div class="fenlei">
+         <img class="img-responsive" src="images/jj-title.png" />
+         <h3>街机游戏</h3>
+         <p>街机（Arcadegame），是置于公共娱乐场所的经营性专用游戏机。也可称为大型电玩（在台湾又有俗称作“大台”），起源于美国的酒吧。</p>	
+</div>		 
+	 </div>
+     <div class="col-md-4  wow flipInY">
+	     <div class="fenlei">
+         <img class="img-responsive" src="images/fc-title.png" />
+         <h3>FC红白机</h3>
+         <p>FC游戏是一种模拟20世纪80年代出品的游戏，代表作品主要有《魂斗罗系列》、《93超级魂》、《沙罗曼蛇系列》、《超级玛丽》、《赤色要塞》</p>		
+</div>		 
+	 </div>
+     <div class="col-md-4  wow flipInY">
+	     <div class="fenlei">
+         <img class="img-responsive" src="images/md-title.png" />
+         <h3>MD游戏</h3>
+         <p>家用机游戏在国内已有二十多年的历史，它曾孕育了中国最早的一批玩家。这批玩家今天已成长为社会的中坚阶层，他们目睹过单机游戏的十年兴衰</p>		
+</div>		 
+	 </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+    <div class="page-header center">
+      <h1>小游戏推荐</h1>
+      <p>相信每个人的童年小时候都是有和游戏接触的，无论是从最开始的超级玛丽、坦克大战还是魂斗罗，这些经典的小时候玩过的游戏都留给我们非常深的印象。</p>
+    </div>
+
+
+<div class="row  " id="jieji">
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic01.jpg"   alt="三国志">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="三国志类游戏" target="_blank" >三国志<br></a>
+            </h3>
+            <p>这个版本是MAME版的，有声音，这也是一个著名的HACK版游戏，游戏中把所有宝箱中的道具都换成相应的加强版武器...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic02.jpg"   alt="拳皇97">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="拳皇97类游戏" target="_blank" >拳皇97<br></a>
+            </h3>
+            <p>《拳皇97 The King ofFighters97》是著名的格斗游戏。本系列的格斗游戏各个都是精品，这个《拳皇97》更是精品...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic03.jpg"   alt="三国战纪">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="三国战纪" target="_blank" >三国战纪<br></a>
+            </h3>
+            <p>《三国战纪：风云再起》是在三国战纪正宗plus基础上的增强版。是根据中国四大名著之一的《三国演义》改编的商用游...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic04.jpg"   alt="西游释厄传">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="西游释厄传" target="_blank" >西游释厄传<br></a>
+            </h3>
+            <p>第二关火云刀场景图片修复！ 第4关老虎密室不会死机，但是一进去马上就出来！ 修复老虎招式打人死机效果！ 修复第5关盘...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic05.jpg"   alt="合金弹头">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="合金弹头" target="_blank" >合金弹头<br></a>
+            </h3>
+            <p>合金弹头MS 1996年的初代出乎意料的并不是由SNK所制作，而是一家名不见经传的冷门公司Nazca的作品。使用了Neo。...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic06.jpg"   alt="傲剑狂刀">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="傲剑狂刀 " target="_blank" >傲剑狂刀 <br></a>
+            </h3>
+            <p>《傲剑狂刀》中有龙吟风、司徒翎、诸葛雄、独孤残、金轮童子上官羽、秦虎、神算子、阴阳判官、鬼冢客、普陀使者、...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic07.jpg"   alt="恐龙快打">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="恐龙快打" target="_blank" >恐龙快打<br></a>
+            </h3>
+            <p>恐龙快打是一款由日本CAPCOM公司出品的一款相当经典的街机游戏，我相信这款游戏承载了许多80后童年的回忆，在游戏厅不分...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 ">
+        <div class="thumbnail">
+          <a href="#" title="" target="_blank">
+            <img class="img-responsive wow bounce"  src="images/jj-pic08.jpg"   alt="街头霸王">
+          </a>
+          <div class="caption">
+            <h3>
+                <a href="#" title="街头霸王" target="_blank" >街头霸王<br></a>
+            </h3>
+            <p>《街头霸王》是由日本CAPCOM公司于1987年首次推出的格斗类单机游戏系列，第一代游戏于1987年8月30日发行。游戏内主要角色有隆、...</p>
+          </div>
+        </div>
+      </div>
+	  
+	  
+	  
+
+	  
+	  
+
+</div>
+
+<hr>
+</div>
+
+<div id="mdyouxi">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 margin-bot-20">
+				<div class="row  wow pulse">
+					 <div class="col-md-5">
+					 	  <img src="images/md-pic01.jpg" class="img-thumbnail"  alt="索尼克" />
+					 </div>
+					 <div class="col-md-7">
+					 	  <h3>索尼克</h3>
+					 	  <p>索尼克是一个著名的游戏和漫画造型，也是一款极受欢迎的电子游戏系列。索尼克作为世界上最具知名度的刺猬，从一诞生就凭借其可爱...</p>
+					 	  <a href="#" class="btn btn-default">了解</a>
+					 </div>
+				</div>
+			</div>
+			<div class="col-md-6 margin-bot-20">
+				<div class="row  wow pulse">
+					 <div class="col-md-5">
+					 	  <img src="images/md-pic02.jpg" class="img-thumbnail"  alt="怒之铁拳2" />
+					 </div>
+					 <div class="col-md-7">
+					 	  <h3>怒之铁拳2</h3>
+					 	  <p>1991年至1992年，CAPCOM的格斗、动作游戏狂潮席卷世界各地的游戏厅。1992年，《怒之铁拳》的续作终于出现了。</p>
+					 	  <a href="#" class="btn btn-default">了解</a>
+					 </div>
+				</div>
+			</div>
+			<div class="col-md-6 margin-bot-20">
+				<div class="row  wow pulse">
+					 <div class="col-md-5">
+					 	  <img src="images/md-pic03.jpg" class="img-thumbnail"  alt="火枪英雄" />
+					 </div>
+					 <div class="col-md-7">
+					 	  <h3>火枪英雄</h3>
+					 	  <p>火枪英雄（gunstar heros）则是一款绝对可以载入史册的游戏，treasure的天才在此得到了酣畅淋漓的发挥：在以...</p>
+					 	  <a href="#" class="btn btn-default">了解</a>
+					 </div>
+				</div>
+			</div>
+			<div class="col-md-6 margin-bot-20">
+				<div class="row  wow pulse">
+					 <div class="col-md-5">
+					 	  <img src="images/md-pic04.jpg" class="img-thumbnail"  alt="幽游白书" />
+					 </div>
+					 <div class="col-md-7">
+					 	  <h3>幽游白书</h3>
+					 	  <p>MD时代经典格斗游戏之一，改编自日本漫画大师富坚义博同名长篇连载漫画《幽游白书》，游戏忠实还原于原著风格...</p>
+					 	  <a href="#" class="btn btn-default">了解</a>
+					 </div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#fc1" aria-controls="fc1" role="tab" data-toggle="tab">魂斗罗</a></li>
+    <li role="presentation"><a href="#fc2" aria-controls="fc2" role="tab" data-toggle="tab">超级马里奥</a></li>
+    <li role="presentation"><a href="#fc3" aria-controls="fc3" role="tab" data-toggle="tab">松鼠大战</a></li>
+    <li role="presentation"><a href="#fc4" aria-controls="fc4" role="tab" data-toggle="tab">雪人兄弟</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" id="fcyouxi">
+    <div role="tabpanel" class="tab-pane fade in active" id="fc1">
+	   <div class="row ptop30">
+	      <div class="col-sm-7 wow fadeInLeft">
+			  <h2>魂斗罗 <span class="text-muted">1987年</span></h2>
+			  <p class="lead">该游戏的故事背景是根据著名恐怖片《异形（Alien）》改编。</p>
+ <p class="lead">1987年第一款魂斗罗诞生在名为Jamma的街机上。游戏名称的含义是“具有优秀战斗能力和素质的人”，它是赋予最强战士的称呼。
+FC上的两部魂斗罗影响了整整一代游戏玩家，在当时与《超级马里奥》齐名，几乎成为FC时代电子游戏的代名词。此外KONAMI于1989年还在日式计算机MSX2上推出了大型游戏机的同名移植版。“魂斗罗”的含义是“具有优秀战斗能力和素质的人”，它是赋予最强战士的称呼。</p>
+		  </div>
+		  <div class="col-sm-5 wow fadeInRight">
+		  <img class="img-responsive" src="images/fc-pic01.jpg" class="img-" />
+		  </div>
+	   </div>
+	</div>
+    <div role="tabpanel" class="tab-pane fade" id="fc2">
+	   <div class="row ptop30">
+
+		  <div class="col-sm-5">
+		  <img class="img-responsive" src="images/fc-pic02.jpg" />
+		  </div>
+	      <div class="col-sm-7">
+			  <h2>超级马里奥 <span class="text-muted">1985年</span></h2>
+			  <p class="lead">在你的童年记忆里，是否有一个蹦跳、顶蘑菇的小人已经被遗忘？
+如果你回忆起了它，你定然会觉得现在它幼稚、无聊，画面不漂亮，游戏不精彩……但请你记住：这才是真正的游戏，它给了你无限的欢乐！许多人只玩过红白机或者网上玩家自己制作的几个破Flash小游戏就还以为任天堂所骄傲的“马里奥”系列就这样子的，你们真的以为超级马里奥就是1985年的“踩蘑菇/采蘑菇”么？
+也许大家都管马里奥叫超级玛丽，踩蘑菇，这是谁宣传的?</p>
+		  </div>		  
+		  
+	   </div>	
+	
+	</div>
+    <div role="tabpanel" class="tab-pane fade" id="fc3">
+	   <div class="row ptop30">
+	      <div class="col-sm-7">
+			  <h2>松鼠大战 <span class="text-muted">1990年</span></h2>
+			  <p class="lead">松鼠大战》是日本卡普空（Capcom）电视游戏公司根据美国迪士尼公司推出的系列动画片《奇奇和蒂蒂之救援突击队》(台湾译名：《奇奇和蒂蒂之救难小福星》) （英文：Chip 'n' Dale Rescue Rangers）而制作的基于任天堂 Famicom 主机的电视游戏，在中国大陆通称《松鼠大战》或《松鼠大作战》，先后于1990年和1993年分别出过两代。游戏的主角是迪士尼动画片《奇奇和蒂蒂之救援突击队》里的两只可爱花栗鼠: 奇奇和蒂蒂（Chip and Dale）.</p>
+		  </div>
+		  <div class="col-sm-5">
+		  <img class="img-responsive" src="images/fc-pic03.jpg" />
+		  </div>
+	   </div>	
+	</div>
+    <div role="tabpanel" class="tab-pane fade" id="fc4">
+	   <div class="row ptop30">
+		  <div class="col-sm-5">
+		  <img class="img-responsive" src="images/fc-pic04.jpg" />
+		  </div>	   
+	      <div class="col-sm-7">
+			  <h2>雪人兄弟 <span class="text-muted">1991年</span></h2>
+			  <p class="lead">雪人兄弟》这个游戏不同于一般动作游戏，它每一关的场景都是固定的，主人公是一对圆呼呼的雪人兄弟，而这对兄弟的敌人也是胖胖的显得挺憨的一些怪物。没有了面目可憎的敌人和刀山火海一般的场景，玩起来也就不那么紧张，并且游戏中各个角色的形象都让人忍俊不禁，因此这个游戏适合的玩家范围非常广，在各个游戏平台上面的受欢迎程度都相当不错，堪称经典。</p>
+		  </div>
+
+	   </div>	
+	</div>
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+    <footer class="footer">
+        <p class="center"><a id="goToTop" href="javascript:scroll(0,0)">回到顶部</a></p>
+    </footer>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nav.js"></script>	
+    <script src="js/bootstrap.js"></script>
+    <script src="js/wow.min.js"></script>	
+	<script>
+
+$(function() {
+     $('#nav').onePageNav();
+
+	var wow = new WOW({
+		boxClass: 'wow',
+		animateClass: 'animated',
+		offset: 100,
+		mobile: true,
+		live: true
+	});
+	wow.init();
+     $('#goToTop').click(function() {
+         $('html , body').animate({
+             scrollTop: 0
+         }, 'slow');
+     });
+	 
+});
+
+	</script>
+  </body>
+</html>
